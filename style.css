@@ -1,0 +1,88 @@
+body{
+    margin: 0; /*Elimina margenes por defecto del navegador*/
+    /*tipografia base para toto el sitio*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #d5d5d5; /*color de fondo claro*/
+    color: #333; /*color de texto base*/
+}
+
+/*Encabezado principal*/
+.header{
+    text-align: center; /*centra el contenido del encabezado*/
+    background: #045204; /*color de fondo verde oscuro*/
+    color: white; /*color de texto blanco*/
+    padding: 1em; /*espaciado interno del encabezado*/
+}
+
+/*imagen principal responsiva*/
+.Gato{
+    width: 100%; /*la imagen ocupa todo el ancho disponible*/
+    height: auto; /*mantiene la proporcion original*/
+}
+
+/*titulos pricipales*/
+h1, h2{
+    margin: 0.5em 0; /*espaciado supeior e inferior*/
+    text-align: center; /*centra os titulos*/
+}
+
+/*parrafos*/
+p{
+    margin: 0.5em 0 1em; /*margen superior pequeñom inferior mas amplio*/
+}
+
+/*seccion de tipo de gatos*/
+.Tipo{
+    text-align: center; /*centra el contenido*/
+    padding: 1em; /*espaciado interior*/
+}
+
+.prefeGatos{
+    display: block; /*se muestra en bloque (una debajo de la otra)*/
+    background: white; /*fondo blanco*/
+    border: 1px solid #ccc; /*border gris claro*/
+    padding: 1em; /*espaciado interno*/
+    margin: 1em auto; /*margen y centrado automatico*/
+    width: 80%; /*ancho relativo al contenedor*/
+    border-radius: 10px;
+}
+
+@media (min-width: 998px) {
+    .prefeGatos{
+        width: 60%; /*mas angosto en pantallas grandes*/
+        font-size: 1.2em; /*texto mas grande*/
+    }
+}
+
+/*formulario*/
+.formulario{
+    padding: 1em; /*espaciado interno*/
+    text-align: center; /*centra el contenido del formulario*/
+}
+
+form input{
+    display: block; /*cada input ocupa una linea completa*/
+    margin: 0.5em auto; /*separacion y centrado*/
+    padding: 0.5em; /*espacio interno*/
+    width: 80%; /*ancho relativo para ser adaptativo*/
+    /*ancho maximo para atender proporcion en pantallas grandes*/
+}
+
+form button {
+    display: block;
+    background-color: #036203; /* Color más oscuro al pasar el mouse */
+    color: white;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    width: 50%;
+    max-width: 315px;
+}
+
+ /*pie de paginas*/
+footer{
+    text-align: center; /*centra el texto del pie*/
+    background: #222; /*fondo oscuro*/
+    color: white; /*texto claro*/
+    padding: 1em; /*espaciado interno*/
+    margin-top: 2em; /*separacion con el contenido anterior*/
+}

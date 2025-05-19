@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--Meta viewport para diseño responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paws Up</title> <!--patas arriba-->
+</head>
+<body>
+    <!--Encabezado principal con imagen adaptativa-->
+    <header class="header">
+        <!--Imagen para pantallas desde 768px en adelante-->
+        <!-- <source srcset="img"> -->
+        <!--Imagen por defecto para moviles (mobile first)-->
+        <img src="img/gatos.jpg" alt="Tipo gato" class="Gato">
+        <!--Titulo principal-->
+        <h1>¡Hoy aprenderemos sobre los diferentes tipos de gatos!</h1>
+        <!--Subtitulo-->
+        <p>Hay diferentes caracteristicas de los gatos, como raza, colores, tipos de ojos,
+            entre otros rasgos maravillos que los identifican a ellos, 
+            pero hay que saber que es lo que les gusta y siempre mantenerlos contentos.</p>
+    </header>
+    <!--Seccion de raza-->
+    <section class="raza">
+        <h2>Preferencias para todo tipos de gatos</h2>
+        <!--div y su clase de preferencias de tipos de gatos-->
+        <div class="Tipo">
+            <div class="prefeGatos">Aqui encontraras muchisimas cosas para tu gato que siempre te acompaña.</div>
+            <div class="prefeGatos">y asi como el siempre esta contigo nosotros tambien estaremos contigo.</div>
+            <div class="prefeGatos">tu gato no estara mas contento si no compras nuestos proctos, ¡asi que esperas ven y visitanos!</div>
+        </div>
+    </section>
+    <!--Seccion del formulario de inscripcion-->
+    <section class="formulario">
+        <h2>Inscribete</h2>
+        <!--Formulario basico para captar datos-->
+        <form>
+            <!--campo para el nombre de usuario, correo y un boton para enviar el formulario-->
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!--pie de pagina con derechos-->
+    <footer>
+        <p>@ 2025 Todo tipos de gatos</p>
+    </footer>
+</body>
+</html>
