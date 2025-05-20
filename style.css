@@ -52,6 +52,10 @@ p{
         width: 60%; /*mas angosto en pantallas grandes*/
         font-size: 1.2em; /*texto mas grande*/
     }
+
+    .Gato{
+        width: 50%;
+    }
 }
 
 /*formulario*/
@@ -65,24 +69,57 @@ form input{
     margin: 0.5em auto; /*separacion y centrado*/
     padding: 0.5em; /*espacio interno*/
     width: 80%; /*ancho relativo para ser adaptativo*/
-    /*ancho maximo para atender proporcion en pantallas grandes*/
 }
 
 form button {
+    border: none;
+    border: 1.5px solid gray;
     display: block;
-    background-color: #036203; /* Color más oscuro al pasar el mouse */
-    color: white;
+    /* Color claro para visualizar */
+    background-color: lightgray;
+    color: #036203;
     margin: 0.5em auto;
     padding: 0.5em;
     width: 50%;
     max-width: 315px;
 }
 
- /*pie de paginas*/
+.prefeGatos:hover{
+    background-color: #036203;
+    color: white;
+}
+
+button:hover{
+    /*color un poco fuerte con fondo blanco al pasar el mouse*/
+    background-color: #036203;
+    color: white;
+}
+
+/*pie de pagina redes*/
+.footer-social{
+    margin-top: 20px; /*espaciado arriba de los iconos*/
+}
+
+.social-link{
+    display: inline-block; /*permitir espaciado entre los iconos*/
+    font-size: 24px; /*tamaño de los iconos*/
+    color: white; /*color de lo iconos*/
+    text-decoration: none; /*eliminar subrayado de los enclaces*/
+    margin-right: 15px; /*espaciado entre los iconos*/
+}
+
+.social-link:hover{
+    color: #008f00; /*color alpasar el cursor*/
+}
+
+/*pie de paginas*/
 footer{
     text-align: center; /*centra el texto del pie*/
     background: #222; /*fondo oscuro*/
-    color: white; /*texto claro*/
-    padding: 1em; /*espaciado interno*/
-    margin-top: 2em; /*separacion con el contenido anterior*/
+    /*texto claro*/
+    color: white; 
+    /*espaciado interno*/
+    padding: 10px; 
+    /*separacion con el contenido anterior*/
+    /* margin-top: 2em;  */
 }
