@@ -1,6 +1,6 @@
 /* VARIABLES GLOBALES */
 :root {
-  --color-primary: #045204;         /* Verde oscuro para encabezados y botones */
+  --color-primary: #16a116;         /* Verde oscuro para encabezados y botones */
   --color-secondary: #036203;       /* Verde más claro para efectos hover o detalles */
   --color-text: #333;               /* Gris oscuro para texto principal */
   --color-light: #d5d5d5;           /* Gris claro para el fondo general */
