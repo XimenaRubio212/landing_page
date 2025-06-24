@@ -1,125 +1,135 @@
-body{
-    margin: 0; /*Elimina margenes por defecto del navegador*/
-    /*tipografia base para toto el sitio*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #d5d5d5; /*color de fondo claro*/
-    color: #333; /*color de texto base*/
+/* VARIABLES GLOBALES */
+:root {
+  --color-primary: #045204;         /* Verde oscuro para encabezados y botones */
+  --color-secondary: #036203;       /* Verde más claro para efectos hover o detalles */
+  --color-text: #333;               /* Gris oscuro para texto principal */
+  --color-light: #d5d5d5;           /* Gris claro para el fondo general */
+  --color-white: #fff;              /* Blanco para fondos o texto claro */
+  --color-footer: #222;             /* Gris oscuro casi negro para el pie de página */
+  --font-base: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Tipografía base */
 }
 
-/*Encabezado principal*/
-.header{
-    text-align: center; /*centra el contenido del encabezado*/
-    background: #045204; /*color de fondo verde oscuro*/
-    color: white; /*color de texto blanco*/
-    padding: 1em; /*espaciado interno del encabezado*/
+/* ESTILOS GENERALES DEL BODY */
+body {
+  margin: 0;                        /* Elimina márgenes por defecto del navegador */
+  font-family: var(--font-base);   /* Usa la fuente definida en variables */
+  background: var(--color-light);  /* Fondo general claro */
+  color: var(--color-text);        /* Color de texto por defecto */
 }
 
-/*imagen principal responsiva*/
-.Gato{
-    width: 100%; /*la imagen ocupa todo el ancho disponible*/
-    height: auto; /*mantiene la proporcion original*/
+/* HEADER (Encabezado Principal)*/
+.header {
+  text-align: center;              /* Centra todo el contenido dentro del header */
+  background: var(--color-primary); /* Color de fondo verde oscuro */
+  color: var(--color-white);       /* Texto blanco para contraste */
+  padding: 1em;                    /* Espaciado interno */
 }
 
-/*titulos pricipales*/
-h1, h2{
-    margin: 0.5em 0; /*espaciado supeior e inferior*/
-    text-align: center; /*centra os titulos*/
+.header__image {
+  width: 100%;                     /* Imagen ocupa todo el ancho disponible */
+  height: auto;                    /* Mantiene proporción original */
 }
 
-/*parrafos*/
-p{
-    margin: 0.5em 0 1em; /*margen superior pequeñom inferior mas amplio*/
+.header__title,
+.header__descripcion {
+  margin: 0.5em 0;                 /* Espaciado arriba y abajo de los textos */
 }
 
-/*seccion de tipo de gatos*/
-.Tipo{
-    text-align: center; /*centra el contenido*/
-    padding: 1em; /*espaciado interior*/
+/*SECCIÓN DE PREFERENCIAS DE GATOS raza*/
+.raza {
+  text-align: center;             /* Centra todo el contenido de la sección */
+  padding: 1em;                   /* Espaciado interno */
 }
 
-.prefeGatos{
-    display: block; /*se muestra en bloque (una debajo de la otra)*/
-    background: white; /*fondo blanco*/
-    border: 1px solid #ccc; /*border gris claro*/
-    padding: 1em; /*espaciado interno*/
-    margin: 1em auto; /*margen y centrado automatico*/
-    width: 80%; /*ancho relativo al contenedor*/
-    border-radius: 10px;
+.raza__title {
+  margin-bottom: 1em;             /* Espacio debajo del título */
 }
 
+.raza__item {
+  background: var(--color-white);  /* Fondo blanco para cada item */
+  border: 1px solid #ccc;          /* Borde gris claro */
+  padding: 1.2em 1em;                    /* Espaciado interno */
+  margin: 1em auto;                   /* Separación entre elementos */
+  width: 90%;                           /* Mejor ajuste en móviles */
+  max-width: 700px;                      /* Ancho relativo al contenedor */
+  border-radius: 12px;             /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);  /* Sombra suave */
+  font-size: 1.1em;                 /* Texto más claro */
+  transition: background 0.3s, color 0.3s, transform 0.2s; /* Transición suave para hover */
+}
+
+.raza__item:hover {
+  background-color: var(--color-secondary); /* Fondo verde más claro al pasar el mouse */
+  color: var(--color-white);                /* Texto blanco en hover */
+  transform: scale(1.02);                      /* Efecto de elevación */
+}
+
+/*FORMULARIO DE INSCRIPCIÓN */
+.form {
+  padding: 1em;                    /* Espaciado interno */
+  text-align: center;             /* Centra el contenido del formulario */
+}
+
+.form__input {
+  display: block;                 /* Ocupa todo el ancho disponible (en bloque) */
+  margin: 0.5em auto;             /* Espaciado y centrado horizontal */
+  padding: 0.5em;                 /* Espaciado interno del input */
+  width: 80%;                     /* Ancho relativo */
+}
+
+.form__boton {
+  display: block;                 /* Botón en línea independiente */
+  margin: 0.5em auto;             /* Centrado horizontal */
+  padding: 0.5em;                 /* Espaciado interno */
+  width: 50%;                     /* Ancho del botón */
+  max-width: 315px;               /* Máximo ancho del botón */
+  border: 1.5px solid gray;       /* Borde delgado gris */
+  background-color: lightgray;    /* Color de fondo inicial */
+  color: var(--color-secondary);  /* Color del texto (verde) */
+  transition: background 0.3s, color 0.3s; /* Transición suave para hover */
+}
+
+.form__boton:hover {
+  background-color: var(--color-secondary); /* Fondo verde al pasar el mouse */
+  color: var(--color-white);                /* Texto blanco en hover */
+}
+
+/*PIE DE PÁGINA (Footer)*/
+.footer {
+  text-align: center;             /* Centra todo el texto e íconos */
+  background: var(--color-footer);/* Fondo oscuro */
+  color: var(--color-white);      /* Texto blanco */
+  padding: 10px;                  /* Espaciado interno */
+}
+
+.footer__social {
+  margin-top: 20px;               /* Espacio encima de las redes sociales */
+}
+
+.footer__link {
+  display: inline-block;          /* Permite que estén uno al lado del otro */
+  font-size: 20px;                /* Tamaño del texto de los enlaces */
+  color: var(--color-white);      /* Color del texto */
+  text-decoration: none;          /* Quita el subrayado */
+  margin-right: 15px;             /* Espaciado entre los enlaces */
+}
+
+.footer__link:hover {
+  color: #008f00;                 /* Verde brillante al pasar el mouse */
+}
+
+.footer__copy {
+  margin-top: 10px;               /* Espacio encima del texto de derechos */
+}
+
+/*MEDIA QUERY PARA PANTALLAS ANCHAS*/
 @media (min-width: 998px) {
-    .prefeGatos{
-        width: 60%; /*mas angosto en pantallas grandes*/
-        font-size: 1.2em; /*texto mas grande*/
-    }
+  .raza__item {
+    width: 60%;                   /* Reduce el ancho en pantallas grandes */
+    font-size: 1.2em;             /* Aumenta tamaño de texto */
+  }
 
-    .Gato{
-        width: 50%;
-    }
-}
-
-/*formulario*/
-.formulario{
-    padding: 1em; /*espaciado interno*/
-    text-align: center; /*centra el contenido del formulario*/
-}
-
-form input{
-    display: block; /*cada input ocupa una linea completa*/
-    margin: 0.5em auto; /*separacion y centrado*/
-    padding: 0.5em; /*espacio interno*/
-    width: 80%; /*ancho relativo para ser adaptativo*/
-}
-
-form button {
-    border: none;
-    border: 1.5px solid gray;
-    display: block;
-    /* Color claro para visualizar */
-    background-color: lightgray;
-    color: #036203;
-    margin: 0.5em auto;
-    padding: 0.5em;
-    width: 50%;
-    max-width: 315px;
-}
-
-.prefeGatos:hover{
-    background-color: #036203;
-    color: white;
-}
-
-button:hover{
-    /*color un poco fuerte con fondo blanco al pasar el mouse*/
-    background-color: #036203;
-    color: white;
-}
-
-/*pie de pagina redes*/
-.footer-social{
-    margin-top: 20px; /*espaciado arriba de los iconos*/
-}
-
-.social-link{
-    display: inline-block; /*permitir espaciado entre los iconos*/
-    font-size: 24px; /*tamaño de los iconos*/
-    color: white; /*color de lo iconos*/
-    text-decoration: none; /*eliminar subrayado de los enclaces*/
-    margin-right: 15px; /*espaciado entre los iconos*/
-}
-
-.social-link:hover{
-    color: #008f00; /*color alpasar el cursor*/
-}
-
-/*pie de paginas*/
-footer{
-    text-align: center; /*centra el texto del pie*/
-    background: #222; /*fondo oscuro*/
-    /*texto claro*/
-    color: white; 
-    /*espaciado interno*/
-    padding: 10px; 
-    /*separacion con el contenido anterior*/
-    /* margin-top: 2em;  */
+  .header__image {
+    width: 50%;                   /* Imagen más pequeña en pantallas grandes */
+  }
 }

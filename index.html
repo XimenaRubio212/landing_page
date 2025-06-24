@@ -10,49 +10,42 @@
 <body>
     <!--Encabezado principal con imagen adaptativa-->
     <header class="header">
-        <!--Imagen para pantallas desde 768px en adelante-->
-        <!-- <source srcset="img"> -->
-        <!--Imagen por defecto para moviles (mobile first)-->
-        <img src="img/gatos.jpg" alt="Tipo gato" class="Gato">
-        <!--Titulo principal-->
-        <h1>¡Asesorios para diferentes tipos de gatos!</h1>
-        <!--Subtitulo-->
-        <p>Hay diferentes caracteristicas de los gatos, como raza, colores, tipos de ojos,
-            entre otros rasgos maravillos que los identifican a ellos, 
-            pero hay que saber que es lo que les gusta y siempre mantenerlos contentos.</p>
+        <img src="img/gatos.jpg" alt="Tipo gato" class="header__image">
+        <h1 class="header__title">¡Asesorios para diferentes tipos de gatos!</h1>
+        <p class="header__descripcion">
+            Hay diferentes características de los gatos... pero hay que saber qué es
+            lo que les gusta.
+        </p>
     </header>
-    <!--Seccion de raza-->
+
+    <!--Sección de raza-->
     <section class="raza">
-        <h2>Preferencias para todo tipos de gatos</h2>
-        <!--div y su clase de preferencias de tipos de gatos-->
-        <div class="Tipo">
-            <div class="prefeGatos">Aqui encontraras muchisimas cosas para tu gato que siempre te acompaña.
-                Y por eso estamos nosotros por que sabemos que es lo que les gusta a ellos.</div>
-            <div class="prefeGatos">Asi como el siempre esta contigo por que saben que los consientes, nosotros tambien estaremos contigo para asesorarte y
-                proporcionarte mas conocimientos y asesorios para ellos.
-            </div>
-            <div class="prefeGatos">Tu gato estara satisfecho si compras nuestros productos, ¡Asi que esperas por visitarnos en nuestras redes sociales!</div>
+        <h2 class="raza__title">Preferencia para todo tipo de gatos</h2>
+        <div class="raza__list">
+            <div class="raza__item">Aquí encontrarás muchísimas cosas para tu gato...</div>
+            <div class="raza__item">Así como él siempre está contigo...</div>
+            <div class="raza__item">Tu gato estará satisfecho si compras nuestros productos...</div>
         </div>
     </section>
-    <!--Seccion del formulario de inscripcion-->
-    <section class="formulario">
-        <h2>Inscribete</h2>
-        <!--Formulario basico para captar datos-->
-        <form>
-            <!--campo para el nombre de usuario, correo y un boton para enviar el formulario-->
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo" required>
-            <button type="submit">Enviar</button>
+
+    <!--Sección del formulario de inscripción-->
+    <section class="form">
+        <h2 class="form__title">Inscríbete</h2>
+        <form class="form__body">
+            <input class="form__input" type="text" placeholder="Nombre" required>
+            <input class="form__input" type="email" placeholder="Correo" required>
+            <button class="form__boton" type="submit">Enviar</button>
         </form>
     </section>
-    <!--pie de pagina con derechos-->
+
+    <!--Pie de página con derechos-->
     <footer class="footer">
-        <div class="footer-social">
-            <a href="#" class="social-link">@Facebook<i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link">@Twitter<i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link">@Instagram<i class="fab fa-instagram"></i></a>
+        <div class="footer__social">
+            <a href="#" class="footer__link">@Facebook</a>
+            <a href="#" class="footer__link">@Twitter</a>
+            <a href="#" class="footer__link">@Instagram</a>
         </div>
-        <p>@2025;Paws Up;Todos los derechos se encuentran Reservados</p>
+        <p class="footer__copy">@2025 Paws Up - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
